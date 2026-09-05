@@ -103,7 +103,7 @@
   "11": {
     "inputs": {
       "model": [
-        "17",
+        "142",
         0
       ],
       "conditioning": [
@@ -210,24 +210,6 @@
     "class_type": "SaveVideo",
     "_meta": {
       "title": "Guardar video"
-    }
-  },
-  "17": {
-    "inputs": {
-      "max_resolution": 360,
-      "jpeg_quality": 80,
-      "suppress_default_preview": true,
-      "preview_frames": 124,
-      "preview_fps": 12,
-      "tiny_vae": "taeh3.safetensors",
-      "model": [
-        "142",
-        0
-      ]
-    },
-    "class_type": "ModelPreviewOverrideKJ",
-    "_meta": {
-      "title": "Model Preview Override"
     }
   },
   "50": {

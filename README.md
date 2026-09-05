@@ -104,14 +104,19 @@ Our patch resolves this with an engineered two-tier attention layout:
 - PyTorch 2.4+ and CUDA 12.1+.
 - NVIDIA GPU with 24GB VRAM (RTX 3090, RTX 4090, A5000, L40S, etc.).
 
-### Checkpoints
-Place the following in your ComfyUI models directory:
-- **Diffusion Model**: `minimax_h3_ref2va_pruned_int8_convrot.safetensors` (in `models/diffusion_models/`)
-- **Text Encoder**: `qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors` (in `models/text_encoders/`)
-- **Video VAE**: `minimax_h3_video_vae_fp16.safetensors` (in `models/vae/`)
-- **Audio VAE**: `minimax_h3_audio_vae_fp32.safetensors` (in `models/vae/`)
-- **Turbo LoRA**: `minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors` (in `models/loras/`)
-- **VSA Gate**: `fasth3_vsa_gate.safetensors` (in `models/loras/`)
+### Checkpoints & Direct Download Links
+Place the following files in your `ComfyUI/models/` directories:
+
+| Model Type | File Name | Destination Directory | Download Link |
+| :--- | :--- | :--- | :--- |
+| **Diffusion Model** | `minimax_h3_ref2va_pruned_int8_convrot.safetensors` | `models/diffusion_models/` | [Download from Comfy-Org](https://huggingface.co/Comfy-Org/MiniMax_H3_repackaged/resolve/main/split_files/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors) |
+| **VSA Gate** | `fasth3_vsa_gate.safetensors` | `models/loras/` | [Download from Hugging Face](https://huggingface.co/barelymining/ComfyUI-MiniMax-H3-FastVideo/resolve/main/fasth3_vsa_gate.safetensors) |
+| **Turbo LoRA (4-Step)** | `minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors` | `models/loras/` | [Download from LightX2V](https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/main/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors) |
+| **Text Encoder** | `qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors` | `models/text_encoders/` | [Download from Comfy-Org](https://huggingface.co/Comfy-Org/MiniMax_H3_repackaged/resolve/main/split_files/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors) |
+| **Video VAE** | `minimax_h3_video_vae_fp16.safetensors` | `models/vae/` | [Download from Comfy-Org](https://huggingface.co/Comfy-Org/MiniMax_H3_repackaged/resolve/main/split_files/vae/minimax_h3_video_vae_fp16.safetensors) |
+| **Audio VAE** | `minimax_h3_audio_vae_fp32.safetensors` | `models/vae/` | [Download from Comfy-Org](https://huggingface.co/Comfy-Org/MiniMax_H3_repackaged/resolve/main/split_files/vae/minimax_h3_audio_vae_fp32.safetensors) |
+
+> 💡 *Tip: The VSA Gate can also be extracted locally from any official FastH3 base checkpoint using the included `tools/extract_vsa_gate.py` script.*
 
 ---
 
