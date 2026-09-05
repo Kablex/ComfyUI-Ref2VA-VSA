@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-ref2va-vsa"
+description = "Ultra-Fast MiniMax-H3 Ref2VA Character Video Generation using Sparse VSA-H3 Attention (72s on RTX 4090)"
+version = "1.0.0"
+license = { text = "Apache-2.0" }
+dependencies = ["torch>=2.4.0", "safetensors>=0.4.3"]
+
+[project.urls]
+Repository = "https://github.com/Kablex/ComfyUI-Ref2VA-VSA"
+
+[tool.comfy]
+PublisherId = "community"
+DisplayName = "ComfyUI-Ref2VA-VSA"
+Icon = ""

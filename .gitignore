@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.safetensors
+*.bin
+*.pt
+*.pth
+.DS_Store
+.idea/
+.vscode/
+venv/
+.venv/
