@@ -177,3 +177,9 @@ python tools/extract_vsa_gate.py \
 
 - Licensed under the [Apache License 2.0](LICENSE).
 - Special thanks to the **FastVideo** team for the VSA-H3 attention concept and to the **ComfyUI** / **comfy-kitchen** developers for the CUDA Sol-Attention kernel primitives.
+
+---
+
+## 🛠️ Professional help
+
+Need this tuned for your own pipeline, GPU or model? We do speed and VRAM audits for ComfyUI image and video workflows, measured before and after. hello@grawwww.xyz
